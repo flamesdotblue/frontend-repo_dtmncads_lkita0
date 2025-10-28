@@ -12,6 +12,7 @@ export default function Navbar() {
           <a href="#features" className="hover:text-slate-900 transition-colors">Features</a>
           <a href="#collab" className="hover:text-slate-900 transition-colors">Collab</a>
           <a href="#community" className="hover:text-slate-900 transition-colors">Community</a>
+          <a href="#feed" className="hover:text-slate-900 transition-colors">Feed</a>
           <a href="#jobs" className="hover:text-slate-900 transition-colors">Jobs</a>
         </nav>
         <div className="flex items-center gap-2">

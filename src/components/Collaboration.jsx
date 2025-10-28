@@ -42,7 +42,7 @@ const avatars = [
   { name: 'Leo', color: 'bg-blue-500' },
 ];
 
-export default function Collaboration() {
+export default function Collaboration({ onOpenProject }) {
   return (
     <section id="collab" className="py-20 bg-gradient-to-b from-white to-slate-50">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -63,7 +63,10 @@ export default function Collaboration() {
             <div className="rounded-2xl border border-black/5 bg-white p-4 shadow-sm">
               <div className="flex items-center justify-between">
                 <div className="font-medium text-slate-900">Project: Night Drive</div>
-                <div className="text-xs text-slate-500">Sprint · Nov 10–24</div>
+                <div className="flex items-center gap-2">
+                  <div className="text-xs text-slate-500">Sprint · Nov 10–24</div>
+                  <button onClick={onOpenProject} className="text-xs rounded-md border border-slate-200 px-2 py-1 hover:bg-slate-50">View Project Details</button>
+                </div>
               </div>
               <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4">
                 {columns.map((col) => (
