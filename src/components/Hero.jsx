@@ -1,5 +1,6 @@
 import Spline from '@splinetool/react-spline';
 import { Film, Users, Briefcase } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export default function Hero() {
   return (
@@ -30,12 +31,12 @@ export default function Hero() {
             A modern space that blends professional networking with content sharing. Showcase your reels and portfolios, collaborate on projects, and discover jobs tailored to your craft.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
-            <a href="#get-started" className="inline-flex items-center justify-center rounded-md bg-indigo-600 px-5 py-3 text-white font-medium shadow-sm hover:bg-indigo-700 active:bg-indigo-800">
+            <Link to="/feed" className="inline-flex items-center justify-center rounded-md bg-indigo-600 px-5 py-3 text-white font-medium shadow-sm hover:bg-indigo-700 active:bg-indigo-800">
               Join the community
-            </a>
-            <a href="#features" className="inline-flex items-center justify-center rounded-md border border-slate-200 bg-white px-5 py-3 text-slate-800 font-medium hover:bg-slate-50">
+            </Link>
+            <Link to="/features" className="inline-flex items-center justify-center rounded-md border border-slate-200 bg-white px-5 py-3 text-slate-800 font-medium hover:bg-slate-50">
               Explore features
-            </a>
+            </Link>
           </div>
 
           <dl className="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-6">
