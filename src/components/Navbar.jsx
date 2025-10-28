@@ -10,9 +10,9 @@ export default function Navbar() {
         </div>
         <nav className="hidden md:flex items-center gap-8 text-sm text-slate-600">
           <a href="#features" className="hover:text-slate-900 transition-colors">Features</a>
+          <a href="#collab" className="hover:text-slate-900 transition-colors">Collab</a>
           <a href="#community" className="hover:text-slate-900 transition-colors">Community</a>
           <a href="#jobs" className="hover:text-slate-900 transition-colors">Jobs</a>
-          <a href="#events" className="hover:text-slate-900 transition-colors">Events</a>
         </nav>
         <div className="flex items-center gap-2">
           <button className="inline-flex items-center gap-2 rounded-md border border-slate-200 px-3 py-1.5 text-sm font-medium text-slate-700 hover:bg-slate-50 active:bg-slate-100">
